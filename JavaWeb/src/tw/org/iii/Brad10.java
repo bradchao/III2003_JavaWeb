@@ -25,7 +25,8 @@ public class Brad10 extends HttpServlet {
 		
 		out.println("<h1>Brad Big Company</h1>");
 		out.print("<hr>");
-		dispatcher.include(request, response);
+//		dispatcher.include(request, response);
+		dispatcher.forward(request, response);
 		out.println("<hr>");
 		out.println("Copyleft");
 		
