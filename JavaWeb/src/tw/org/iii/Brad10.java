@@ -19,7 +19,8 @@ public class Brad10 extends HttpServlet {
 		// 針對中文檔名處理, 必須在任何  request之前做的設定
 		request.setCharacterEncoding("UTF-8");
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("Brad11");
+		RequestDispatcher dispatcher = 
+				request.getRequestDispatcher("Brad11?name=brad&price=123");
 		// include , forward
 		
 		out.println("<h1>Brad Big Company</h1>");

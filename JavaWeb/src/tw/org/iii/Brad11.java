@@ -15,7 +15,10 @@ public class Brad11 extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
-		out.print("Hello, World");
+		String name = request.getParameter("name");
+		String price = request.getParameter("price");
+		
+		out.print("Hello, World:" + name + ":" + price);
 		
 	}
 }
